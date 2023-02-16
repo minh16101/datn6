@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav">
+    <fragment
+        android:id="@+id/item_home"
+        android:name="com.example.testdbentity.homefragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/item_bill"
+        android:name="com.example.testdbentity.shoppingfragment.ShoppingFragment"
+        android:label="Shopping"
+        tools:layout="@layout/fragment_shopping"/>
+
+    <fragment
+        android:id="@+id/item_discover"
+        android:name="com.example.testdbentity.discoverfragment.DiscoveryFragment"
+        android:label="Saved"
+        tools:layout="@layout/fragment_discovery"/>
+
+    <fragment
+        android:id="@+id/item_account"
+        android:name="com.example.testdbentity.accountfragment.AccountFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_account"/>
+</navigation>

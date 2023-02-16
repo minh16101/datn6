@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_home"
+        android:title="Home"
+        android:icon="@drawable/home_icon_silhouette_svgrepo_com"></item>
+    <item
+        android:id="@+id/item_bill"
+        android:title="Shopping"
+        android:icon="@drawable/shopping_cart_free_5_svgrepo_com"></item>
+    <item
+        android:id="@+id/item_discover"
+        android:title="Saved"
+        android:icon="@drawable/saved_svgrepo_com"></item>
+    <item
+        android:id="@+id/item_account"
+        android:title="Setting"
+        android:icon="@drawable/setting_svgrepo_com"></item>
+</menu>

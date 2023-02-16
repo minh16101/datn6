@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".homefragment.bookinghotel.SearchHotelActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/location_hotel_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/border_search_hotel"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/search_normal_1_svgrepo_com"
+        android:drawableRight="@drawable/location_svgrepo_com"
+        android:hint="Địa điểm"
+        android:completionThreshold="1"
+        android:drawablePadding="20dp"
+        android:padding="5dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        >
+        <EditText
+            android:id="@+id/from_book_day"
+            android:layout_width="0dp"
+            android:background="@drawable/border_search_hotel"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/input_svgrepo_com"
+            android:padding="5dp"
+            android:focusable="false"
+            android:drawablePadding="10dp"
+            android:textColor="#1E3BA3"
+            android:hint="Nhận phòng"
+            android:layout_weight="5"/>
+        <EditText
+            android:id="@+id/to_book_day"
+            android:layout_width="0dp"
+            android:background="@drawable/border_search_hotel"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:textColor="#1E3BA3"
+            android:hint="Trả phòng"
+            android:focusable="false"
+            android:drawableLeft="@drawable/output_svgrepo_com"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_weight="5"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/search_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Tìm kiếm"
+        android:backgroundTint="#1E3BA3"
+        android:layout_marginTop="10dp"/>
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recycler_view_history_search_hotel"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        />-->
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".login.LoginTabFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- TODO: Update blank fragment layout -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/filledTextField2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:hint="Email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_tab_email"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filledTextField1"
+            app:layout_constraintBottom_toTopOf="@+id/login_button"
+            android:hint="Password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_tab_password"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/login_button"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent=".8"
+            app:layout_constraintVertical_bias=".7"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:background="@drawable/button_login_border"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forget_ps"
+            />
+        <TextView
+            android:id="@+id/forget_ps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/login_button"
+            app:layout_constraintEnd_toEndOf="@+id/filledTextField2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/filledTextField2"
+            app:layout_constraintWidth_percent=".8"/>
+        <LinearLayout
+            android:id="@+id/ln5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/login_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:orientation="horizontal"
+            app:layout_constraintRight_toRightOf="parent"
+            >
+
+            <ImageButton
+                android:id="@+id/login_google"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_autoslide_hotel"
+                android:src="@drawable/google_svgrepo_com"
+                />
+            <ImageButton
+                android:id="@+id/login_facebook"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:background="@drawable/background_autoslide_hotel"
+                android:src="@drawable/google_svgrepo_com"
+                />
+            <ImageButton
+                android:id="@+id/login_twitter"
+                android:layout_width="60dp"
+                android:background="@drawable/background_autoslide_hotel"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/google_svgrepo_com"
+                />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
